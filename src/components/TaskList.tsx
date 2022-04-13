@@ -35,7 +35,9 @@ export function TaskList() {
     // Altere entre `true` ou `false` o campo `isComplete` de uma task com dado ID
     const value = tasks.map((value) => {
         if(value.id === id){
-          value.isComplete = false
+          value.isComplete = true,
+
+          console.log(value.isComplete)
         }
     })
   return value
